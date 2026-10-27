@@ -1,0 +1,24 @@
+name: Task
+description: A specific piece of work with a clear outcome.
+type: Task
+labels: ["type:task", "status:triage"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in and what is out.
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
