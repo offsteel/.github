@@ -1,0 +1,42 @@
+name: Bug report
+description: Something does not work as expected.
+type: Bug
+labels: ["bug", "status:triage"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. See ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, architecture, agent or tool in use.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Remove tokens, keys and personal data before pasting.
+      render: shell
